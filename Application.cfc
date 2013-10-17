@@ -73,6 +73,27 @@ component extends="org.corfield.framework" {
 		generateSES = true
 	};
 	
+	variables.framework.routes = [
+		{ 
+			"/application/:application/resource/:resource" = "/resources/endpoints/application/:application/resource/:resource",
+			hint="resources"
+		},
+		
+		{ 
+			"/applications/list" = "/applications/list",
+			"/application/:application/resources/" = "/resources/list/application/:application", 
+			hint = "list resources for rest application" 
+		},
+	
+		
+	  
+	  
+	  { "/old/url" = "302:/new/url" },
+	  { "$GET/login" = "/not/authorized", "$POST/login" = "/auth/login" },
+	  //{ "*" = "/not/found" }
+	];		
+	
+	
 	function before() {
 		
 		rc.pageSection = 'rc.pageSection not set';
@@ -81,24 +102,16 @@ component extends="org.corfield.framework" {
 	}
 	
 	
-variables.framework.routes = [
-	{ 
-		"/application/:application/resource/:resource" = "/resources/endpoints/application/:application/resource/:resource",
-		hint="resources"
-	},
-	
-	{ 
-		"/applications/list" = "/applications/list",
-		"/application/:application/resources/" = "/resources/list/application/:application", 
-		hint = "list resources for rest application" 
-	},
 
-	
-  
-  
-  { "/old/url" = "302:/new/url" },
-  { "$GET/login" = "/not/authorized", "$POST/login" = "/auth/login" },
-  //{ "*" = "/not/found" }
-];	
 
+	function setupApplication() {
+		
+		// create src and build directories
+
+		if (! DirectoryExists( ExpandPath('src')))
+			DirectoryCreate(ExpandPath('src'));
+		
+		if (! DirectoryExists( ExpandPath('build')))
+			DirectoryCreate(ExpandPath('build'));
+	}
 }

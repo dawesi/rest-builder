@@ -7,15 +7,15 @@ component {
 	public void function before( ) {
 		rc.pageSection = 'ReST Applications';
 	}
-	
+
 	public void function startDefault() {
 		variables.fw.redirect( action = 'applications.list' );
 	}
-	
+
 	public void function list( struct rc ) {
 
-		
-		
+		param(name='rc.ajm', default=true);
+
 		rc.pageTitle = 'List';
 		rc.path = ExpandPath('src/');
 		rc.apps = Directorylist(absolute_path=rc.path, recurse=false, listInfo='name');

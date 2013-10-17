@@ -36,15 +36,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://getrailo.org">Get Railo</a></li>
-            <li><a href="http://webonix.net">Webonix</a></li>
-            <li><a href="http://raml.org/index.html">RAML</a></li>
+            <li><a href="http://getrailo.org" target="_blank">Get Railo</a></li>
+            <li><a href="http://webonix.net" target="_blank">Webonix</a></li>
+            <li><a href="http://raml.org/index.html" target="_blank">RAML</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="http://getbootstrap.com/">Bootstrap 3</a></li>
-                <li><a href="http://jquery.com/">jQuery 2</a></li>
-                <li><a href="https://github.com/framework-one/fw1/wiki">FW/1</a></li>
+                <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a></li>
+                <li><a href="http://jquery.com/" target="_blank">jQuery 2</a></li>
+                <li><a href="https://github.com/framework-one/fw1/wiki" target="_blank">FW/1</a></li>
+				
+				<li><a href="https://github.com/raml-org/raml-spec/wiki/RAML&trade;-Version-0.8:-RESTful-API-Modeling-Languagei" target="_blank">RESTful API Modeling Language</a> Version 0.8</li>
 
               </ul>
             </li>
@@ -76,8 +78,8 @@
     <div class="container">
       
       <div class="row">
-        <div class="col-md-3 col-sm-4 sidebar">
-            <ul class="nav nav-stacked nav-pills">
+        <div class="col-md-3 col-sm-4 sidebar" >
+            <ul class="nav nav-stacked nav-pills" >
 				<cfoutput>
 				<li><a href="/rest-builder/">Home</a></li>
 				
@@ -124,7 +126,7 @@
       <footer>
         <div class="row">
           <div class="col-lg-12">
-				<a href="##">ReST Builder</a> is copyright (c) Andrew J Mercer 2013 - <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licensed under the Apache License, Version 2.0</a>
+				<a href="https://github.com/webonix/rest-builder" target="_blank">ReST Builder</a> is copyright (c) Andrew J Mercer 2013 - <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licensed under the Apache License, Version 2.0</a>
 				<a href="https://github.com/framework-one/fw1/wiki" target="_blank">FW/1</a> is copyright (c) 2009-2010 Sean Corfield, Ryan Cogswell - 
 				<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licensed under the Apache License, Version 2.0</a>
 				<br />
