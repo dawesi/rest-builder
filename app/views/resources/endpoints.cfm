@@ -22,9 +22,10 @@ options created<br />
 <h4>Notes</h4>
 <ul>
 	<li>collection or member</li>
-	<li>responce: Content-Type</li>
+	<li>responce: Content-Type / properties</li>
 	<li>body: Accepts</li>
 	<li>headers - Authorization for securied or Token</li>
+	<li>Query Params - paging / filter</li>
 </ul>
 
 </p>
