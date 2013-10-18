@@ -2,19 +2,24 @@
 ><p>endpoint stuff here</p>
 
 <p>
-<strong>URI</strong>: /rest/#rc.application#/#rc.resource# <input value="/id/:id"><br />
-<br />
+	<strong>URI</strong>: /rest/#rc.application#/#rc.resource#/<input value="" placeholder="{resID}"> <em>default to /</em><br />
+</p>
 
-<strong>Methods:</strong>
-options created<br />
-<input type="checkbox" value="Get"> Get<br />
-<input type="checkbox" value="Post"> Post<br />
-<input type="checkbox" value="Put"> Put<br />
-<input type="checkbox" value="Patch"> Patch<br />
-<input type="checkbox" value="Delete"> Delete<br />
-<br />
+<p>
+	<strong>Methods:</strong>
+	options created<br />
+	<input name="methods" type="checkbox" value="Get"> Get<br />
+	<input name="methods" type="checkbox" value="Post"> Post<br />
+	<input name="methods" type="checkbox" value="Put"> Put<br />
+	<input name="methods" type="checkbox" value="Patch"> Patch<br />
+	<input name="methods" type="checkbox" value="Delete"> Delete<br />
+</p>
+	<strong>Properties:</strong>
+	<br />
+	<input name="properties" type="checkbox" value="Paged"> Paged<br />
+	<input name="properties" type="checkbox" value="Secured"> Secured<br />
 
-<strong></strong>
+<p>
 
 </p>
 

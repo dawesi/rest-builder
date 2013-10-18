@@ -46,7 +46,10 @@
                 <li><a href="http://jquery.com/" target="_blank">jQuery 2</a></li>
                 <li><a href="https://github.com/framework-one/fw1/wiki" target="_blank">FW/1</a></li>
 				
-				<li><a href="https://github.com/raml-org/raml-spec/wiki/RAML&trade;-Version-0.8:-RESTful-API-Modeling-Languagei" target="_blank">RESTful API Modeling Language</a> Version 0.8</li>
+				<li><a href="https://github.com/raml-org/raml-spec/wiki/RAML&amp;trade;-Version-0.8:-RESTful-API-Modeling-Language" target="_blank">RAML wiki v0.8</a></li>
+				
+				<li><a href="http://jyaml.sourceforge.net/tutorial.html" target="_blank">jyaml</a></li>
+				
 
               </ul>
             </li>
@@ -89,6 +92,9 @@
 				
 				<li class="disabled"><a href="##">System</a></li>
 				<li><a href="/rest-builder/?reload=true">Reload FW/1</a></li>
+				
+				<li class="disabled"><a href="##">YAML</a></li>
+				<li><a href="/rest-builder/index.cfm/yaml">Parse RAML</a></li>
 			
 				</cfoutput><!--- 
               <li class="disabled"><a href="#">Portfolio</a></li>
@@ -126,7 +132,7 @@
       <footer>
         <div class="row">
           <div class="col-lg-12">
-				<a href="https://github.com/webonix/rest-builder" target="_blank">ReST Builder</a> is copyright (c) Andrew J Mercer 2013 - <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licensed under the Apache License, Version 2.0</a>
+				<a href="https://github.com/webonix/rest-builder" target="_blank">ReST Builder</a><!---  is copyright (c) Andrew J Mercer 2013 ---> - <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licensed under the Apache License, Version 2.0</a>
 				<a href="https://github.com/framework-one/fw1/wiki" target="_blank">FW/1</a> is copyright (c) 2009-2010 Sean Corfield, Ryan Cogswell - 
 				<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licensed under the Apache License, Version 2.0</a>
 				<br />

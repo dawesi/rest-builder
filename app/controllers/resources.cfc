@@ -42,7 +42,8 @@ component {
 		rc.path = ExpandPath('src/#ARGUMENTS.rc.application#/#ARGUMENTS.rc.resource#');
 		DirectoryCreate(rc.path);
 		
-		rc.baseUri = ReplaceNoCase('#rc.baseUri#/#ARGUMENTS.rc.application#/#ARGUMENTS.rc.resource#', '//', '/', 'ALL');
+		rc.baseUri = ReplaceNoCase('#ARGUMENTS.rc.baseUriDomain#/#ARGUMENTS.rc.baseUriRailoMapping#/#ARGUMENTS.rc.application#/#ARGUMENTS.rc.resource#', '//', '/', 'ALL');
+
 
 		rc.raml = '##%RAML 0.8
 ---
@@ -50,7 +51,7 @@ title: #rc.description#
 version: #rc.version#
 baseUri: #rc.baseUri#
 		';
-		
+
 		FileWrite(ExpandPath('src/#ARGUMENTS.rc.application#/#ARGUMENTS.rc.resource#.raml'), rc.raml);
 		
 

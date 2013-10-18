@@ -18,9 +18,12 @@
 			<input name="version" class="form-control" id="version" placeholder="0.1">
 		</div>
 		
-		<label for="baseUri" class="col-lg-2 control-label">baseUri</label>
+		<label for="baseUri" class="col-lg-2 form control-label">baseUri</label>
 		<div class="col-lg-10">
-			<input name="baseUri" class="form-control" id="baseUri" placeholder="https://api.company.com/rest">
+			<input name="baseUriDomain"       class="col-lg-5" placeholder="https://api.company.com">
+			<span class="col-lg-1">/</span>
+			<input name="baseUriRailoMapping" class="col-lg-2" placeholder="rest">
+			<span class="col-lg-2">/#rc.application#</span>
 		</div>
 	</div>
 
